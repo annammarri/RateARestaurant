@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Rate a Restaurant
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card *ngFor="let restaurant of restaurants">
+    <img src={{restaurant.image}} />
+    <div class="card-title">{{restaurant.name}}</div>
+    <div class="card-subtitle">{{restaurant.type}}</div>
+  </ion-card>
+</ion-content>
