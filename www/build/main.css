@@ -21276,6 +21276,12 @@ sub {
   }
 }
 
+page-add-restaurant-page .button-size {
+  height: 45px;
+  width: 190px;
+  margin: 20%;
+}
+
 page-home .card-background-page {
   color: #fff;
 }
@@ -21297,9 +21303,16 @@ page-home .card-background-page .card-subtitle {
   font-size: 1.0em;
   position: absolute;
   top: 0%;
+  right: 0px;
   width: 22%;
 }
 
 page-home .card-background-page .card-title, page-home .card-background-page .card-subtitle {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+page-home .add-position {
+  position: absolute;
+  bottom: 3px;
+  right: 18px;
 }

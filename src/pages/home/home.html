@@ -2,14 +2,16 @@
   <ion-navbar>
     <ion-title>
       Rate a Restaurant
+      <ion-icon ios="ios-add-circle" md="md-add-circle"class="add-position" (click)="goToAddRestaurant()"></ion-icon>
     </ion-title>
+    
   </ion-navbar>
 </ion-header>
 
 <ion-content class="card-background-page">
-  <ion-card *ngFor="let restaurant of restaurants">
-    <img src={{restaurant.image}} />
-    <div class="card-title">{{restaurant.name}}</div>
-    <div class="card-subtitle">{{restaurant.type}}</div>
+  <ion-card *ngFor="let item of items">
+    <img src="../assets/img/{{item.type}}.jpg"/>
+    <div class="card-title">{{item.name}}</div>
+    <div class="card-subtitle">{{item.type}}</div>
   </ion-card>
 </ion-content>

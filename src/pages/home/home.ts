@@ -1,36 +1,45 @@
 import { Component } from '@angular/core';
-
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
+import { AddRestaurantPagePage} from '../add-restaurant-page/add-restaurant-page';
+import { RestaurantService } from '../../providers/restaurant-service';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  providers:[RestaurantService]
 })
 export class HomePage {
-  types : string[];
-  images: string[];
-  names: string[];
-  descriptions: string[];
-  restaurants: Array<{name: string, description: string, type:string, image:string}>;
-  constructor(public navCtrl: NavController) {  
-    this.types=['Hindu', 'Italian', 'Meat', 'Vegetarian', 'Mexican'];
-    this.descriptions=['Taj Mahal has been selected for the 2016 Certificate of Excellence', 
-                       'Italian pasta specialist',
-                       'Are dinners were cooked to perfection and the ambience takes the you back to another place and time',
-                       'Best vegan ans vegetarian food'];
-    this.names=['The Taj Mahal', 'Andiamo La','Aqui es', 'Neshuma' ]
-    this.images=['../assets/img/hindu.jpg', '../assets/img/italian.jpg','../assets/img/meat.jpg','../assets/img/vegetarian.jpg','../assets/img/mexican.jpg'];  
-    this.restaurants=[];
-
-    for(let i = 0; i < 4; i++) {
-      this.restaurants.push({
-        name: this.names[i],
-        description: this.descriptions[i],
-        type: this.types[i],
-        image:this.images[i]
-      });
-    }
-  
+  public items = [];
+  constructor(public navCtrl: NavController, 
+              private restaurantService: RestaurantService,
+              public modalCtrl: ModalController) { 
   }
 
+  ionViewDidLoad(){
+     this.restaurantService.getRestaurants().then((rests) => {
+      if(rests){
+        this.items = JSON.parse(rests); 
+      } else { 
+        this.restaurantService.updateRestaurants().then(restaurants => {
+          if(restaurants){
+            this.items = restaurants;
+          }
+        });
+      }
+    });
+  }
+
+  goToAddRestaurant(){
+    let addModal = this.modalCtrl.create(AddRestaurantPagePage);
+    addModal.onDidDismiss((item)=>{
+      if(item){
+        this.saveNewRestaurant(item);
+      }
+    });
+    addModal.present(); 
+  }
+  saveNewRestaurant(item){
+    this.items.push(item);
+    this.restaurantService.saveNewRestaurants(this.items);
+  }
 }
