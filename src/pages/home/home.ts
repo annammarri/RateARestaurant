@@ -41,5 +41,6 @@ export class HomePage {
   saveNewRestaurant(item){
     this.items.push(item);
     this.restaurantService.saveNewRestaurants(this.items);
+  
   }
 }
