@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+//Framework extensions
 import { NavController, NavParams, ViewController } from 'ionic-angular';
+import { Component } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
 @Component({
@@ -21,9 +22,7 @@ export class AddRestaurantPagePage {
         name: this.name,
         type: this.type,
         description: this.description
-      };
-      
-      this.view.dismiss(newRestaurant);
-        
+      };      
+      this.view.dismiss(newRestaurant);      
     }
 }

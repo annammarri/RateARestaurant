@@ -1,10 +1,17 @@
+//Framework extensions
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import { Restaurant } from '../pages/restaurants/restaurant';
-import { RESTAURANTS } from '../pages/restaurants/mock-restaurants';
 import { Storage } from '@ionic/storage';
-import {CONST_RESTAURANTS} from '../constants/constants';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+//Entities
+import { Restaurant } from '../entities/restaurant';
+import { Comment } from '../entities/comment';
+//Mocks
+import { RESTAURANTS } from '../mocks/mock-restaurants';
+import { COMMENTS } from '../mocks/mock-comments';
+//Constants
+import {CONST_RESTAURANTS} from '../constants/constants';
+
 
 @Injectable()
 export class RestaurantService {
@@ -33,5 +40,14 @@ export class RestaurantService {
   }
   resetLocalStorage(){
     this.storage.clear();
+  }
+  getComments(restName):Promise<Comment[]>{
+    let commentList=[];
+    for(let i=0; i<COMMENTS.length; i++){
+      if(COMMENTS[i].restName === restName){
+        commentList.push(COMMENTS[i]);
+      }
+    }
+    return Promise.resolve(commentList);
   }
 }

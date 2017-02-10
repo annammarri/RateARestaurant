@@ -21282,6 +21282,68 @@ page-add-restaurant-page .button-size {
   margin: 20%;
 }
 
+page-details .card-background-page {
+  color: #fff;
+}
+
+page-details .card-background-page ion-card {
+  position: relative;
+  text-align: center;
+}
+
+page-details .card-background-page .card-title {
+  position: absolute;
+  top: 36%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+}
+
+page-details .card-background-page .card-subtitle {
+  font-size: 1.0em;
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  width: 22%;
+}
+
+page-details .card-background-page .card-title, page-details .card-background-page .card-subtitle {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+page-details .add-position {
+  position: absolute;
+  bottom: 3px;
+  right: 18px;
+}
+
+page-details .img-position {
+  position: relative;
+}
+
+page-details .restaurant-title {
+  position: absolute;
+  text-align: center;
+  top: 20%;
+  font-size: 2.0em;
+  width: 100%;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+page-details .description-label {
+  color: black;
+}
+
+page-details .rating-text {
+  right: 100%;
+}
+
+page-details ion-label {
+  color: black;
+}
+
 page-home .card-background-page {
   color: #fff;
 }

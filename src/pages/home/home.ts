@@ -1,12 +1,15 @@
+//Framework extensions
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
+//Pages
 import { AddRestaurantPagePage} from '../add-restaurant-page/add-restaurant-page';
+import { DetailsPage } from '../details/details';
+//Providers
 import { RestaurantService } from '../../providers/restaurant-service';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html',
-  providers:[RestaurantService]
+  templateUrl: 'home.html'
 })
 export class HomePage {
   public items = [];
@@ -41,6 +44,8 @@ export class HomePage {
   saveNewRestaurant(item){
     this.items.push(item);
     this.restaurantService.saveNewRestaurants(this.items);
-  
+  }
+  goToDetails(name,type, description){
+    this.navCtrl.push(DetailsPage,{name:name, type:type, description:description});
   }
 }
