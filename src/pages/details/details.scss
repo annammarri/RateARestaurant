@@ -1,0 +1,55 @@
+page-details {
+    .card-background-page {
+
+        ion-card {
+            position: relative;
+            text-align: center;
+        }
+        .card-title {
+            position: absolute;
+            top: 36%;
+            font-size: 2.0em;
+            width: 100%;
+            font-weight: bold;        
+        }
+        .card-subtitle {
+            font-size: 1.0em;
+            position: absolute;
+            top: 0%;
+            right: 0px;
+            width: 22%;
+        }
+        .card-title, .card-subtitle { 
+            background-color: rgba(0,0,0 , 0.5);
+        }
+        color: #fff;
+    }
+    .add-position {
+        position:absolute;
+        bottom: 3px;
+        right: 18px; 
+    }
+    .img-position{
+        position:relative;
+        
+    }
+    .restaurant-title{
+        position: absolute;
+        text-align: center;
+        top: 20%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        background-color: rgba(0,0,0 , 0.5);
+        color: #fff;
+    }
+    .description-label{
+        color:black;
+    }
+    .rating-text{
+        right: 100%;
+    }
+    ion-label {
+        color: black;
+  }
+}

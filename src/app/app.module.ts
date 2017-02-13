@@ -1,16 +1,24 @@
-import { NgModule, ErrorHandler } from '@angular/core';
+//Framework extensions
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { AddRestaurantPagePage } from '../pages/add-restaurant-page/add-restaurant-page';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { HttpModule }    from '@angular/http';
 import { Storage } from '@ionic/storage';
+import { MyApp } from './app.component';
+//Providers
+import { RestaurantService } from '../providers/restaurant-service';
+//Pages
+import { HomePage } from '../pages/home/home';
+import { DetailsPage } from '../pages/details/details';
+import { AddRestaurantPagePage } from '../pages/add-restaurant-page/add-restaurant-page';
+
+
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AddRestaurantPagePage
+    AddRestaurantPagePage,
+    DetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -20,9 +28,11 @@ import { Storage } from '@ionic/storage';
   entryComponents: [
     MyApp,
     HomePage,
-    AddRestaurantPagePage
+    AddRestaurantPagePage,
+    DetailsPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},
-              Storage]
+              Storage,
+              RestaurantService]
 })
 export class AppModule {}
