@@ -7,10 +7,9 @@
     
   </ion-navbar>
 </ion-header>
-
 <ion-content class="card-background-page">
   <ion-card *ngFor="let item of items" (click)="goToDetails(item.name, item.type, item.description)">
-    <img src="../assets/img/{{item.type}}.jpg"/>
+    <img src="assets/img/{{item.type}}.jpg"/>
     <div class="card-title">{{item.name}}</div>
     <div class="card-subtitle">{{item.type}}</div>
   </ion-card>

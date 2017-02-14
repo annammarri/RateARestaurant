@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RateARestaurant</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    
+    <string name="google_app_id">1:765183659569:android:0eea934572714f5c</string>
+    <string name="google_api_key">AIzaSyAIRZsrgXtxEx_74tVwv4w0lYW_R2TKfmM</string>
+</resources>

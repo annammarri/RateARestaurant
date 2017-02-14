@@ -1,11 +1,14 @@
 //Framework extensions
 import { Component } from '@angular/core';
 import { NavController, ModalController } from 'ionic-angular';
+//External extensions
+import { Firebase } from 'ionic-native';
 //Pages
 import { AddRestaurantPagePage} from '../add-restaurant-page/add-restaurant-page';
 import { DetailsPage } from '../details/details';
 //Providers
 import { RestaurantService } from '../../providers/restaurant-service';
+import { AnalyticService } from '../../providers/analytic-service';
 
 @Component({
   selector: 'page-home',
@@ -15,6 +18,7 @@ export class HomePage {
   public items = [];
   constructor(public navCtrl: NavController, 
               private restaurantService: RestaurantService,
+              private analyticService: AnalyticService,
               public modalCtrl: ModalController) { 
   }
 
@@ -46,6 +50,8 @@ export class HomePage {
     this.restaurantService.saveNewRestaurants(this.items);
   }
   goToDetails(name,type, description){
+    //Firebase.logEvent("Restaurant-detail", {name: name, type:  type});
+    this.analyticService.sendEvent();
     this.navCtrl.push(DetailsPage,{name:name, type:type, description:description});
   }
 }

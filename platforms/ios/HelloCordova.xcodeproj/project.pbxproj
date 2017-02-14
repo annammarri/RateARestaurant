@@ -23,6 +23,27 @@
 		4A441251BEC84805BCEFF543 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBEF12809324621AA371AD2 /* IonicKeyboard.m */; };
 		A4D04176C341474D800BAEFC /* SQLitePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E31BB01F4464F7CB6561A51 /* SQLitePlugin.m */; };
 		F437CBF86AE44049B646056C /* sqlite3.c in Resources */ = {isa = PBXBuildFile; fileRef = 199827FCA4384208B48FAE6C /* sqlite3.c */; settings = {COMPILER_FLAGS = "-DSQLITE_TEMP_STORE=2 -DSQLITE_THREADSAFE=1 -DSQLITE_ENABLE_FTS3 -DSQLITE_ENABLE_FTS3_PARENTHESIS -DSQLITE_ENABLE_FTS4 -DSQLITE_ENABLE_RTREE  -DSQLITE_OMIT_BUILTIN_TEST -DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_DEFAULT_PAGE_SIZE=1024 -DSQLITE_DEFAULT_CACHE_SIZE=2000"; }; };
+		6FE34AC7A7A640E1BC1662D0 /* AppDelegate+FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0296932077204703BBEDCB7D /* AppDelegate+FirebasePlugin.m */; };
+		0CAE983FE53740E6ADD91397 /* FirebasePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B41D7C9DBBB40A6AC7777D9 /* FirebasePlugin.m */; };
+		3FCB92A21A6A4EC88713F529 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04DE358DA8814FD382930F5D /* GoogleService-Info.plist */; };
+		12C63B6EE7F2409CB9A10F5D /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E425176FDDA94EEFA0A3CCEA /* FirebaseAnalytics.framework */; };
+		EB6396D283584179B143A448 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8744E8602D441991FE9C68 /* FirebaseCore.framework */; };
+		4BE2A51B65A948C6A062B7E0 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F5E355489E34B7FA7FB6C37 /* FirebaseInstanceID.framework */; };
+		5040BC507776482BB953A28E /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF91C882DE834169A2063579 /* GoogleInterchangeUtilities.framework */; };
+		E5058436E8CC440AA6A88CF8 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC660E9C46E4496091E2C67F /* GoogleSymbolUtilities.framework */; };
+		9A8B87F9AD45412FA24155EE /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E8B4E0DBA347DF90D08D68 /* GoogleUtilities.framework */; };
+		3AB056AFCF494B2CA12FD06D /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE80E027F5449D7ACD60BD4 /* FirebaseMessaging.framework */; };
+		2DB9EC6EAD474086B606C8E9 /* GoogleIPhoneUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8531B99D1DA44D46BC4EC305 /* GoogleIPhoneUtilities.framework */; };
+		D4E50831318D4DDAAC23A6DF /* FirebaseCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8013811F10BC487094E29D13 /* FirebaseCrash.framework */; };
+		724E11966267420894AF4827 /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EA98A657F1E4A649491EBF0 /* FirebaseRemoteConfig.framework */; };
+		4AA3827594B04A90B28748A1 /* UniversalAnalyticsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F654D35A4154AD1A6A29E4F /* UniversalAnalyticsPlugin.m */; };
+		9DAFA03F49424F3EB1958F47 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D17507A98CD4432E832B146B /* libGoogleAnalyticsServices.a */; };
+		0E37990AD05A40A398D70B80 /* libAdIdAccess.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18694699C3F340B98BBC4164 /* libAdIdAccess.a */; };
+		037008DB094E4D708DDB0F62 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5AB1F53C35B475186D017C9 /* SystemConfiguration.framework */; };
+		4818AE9257704EF4BA0FD8F2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92161D5783E47C4A154D394 /* CoreData.framework */; };
+		6062FEACCC324DAABCCF8845 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2CF6C8216A4A5596CB338C /* AdSupport.framework */; };
+		E45D007D2D7646D88525BFB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EE04CBBF2864445922366AE /* libz.dylib */; };
+		90E7ABF2237140C8A0368824 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 735E7A6C260644EB97C86C3C /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +99,41 @@
 		199827FCA4384208B48FAE6C /* sqlite3.c */ = {isa = PBXFileReference; name = "sqlite3.c"; path = "cordova-sqlite-storage/sqlite3.c"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		0F19E060CBF24B31B8418A66 /* SQLitePlugin.h */ = {isa = PBXFileReference; name = "SQLitePlugin.h"; path = "cordova-sqlite-storage/SQLitePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		98E5870734FD4C0E95890F6D /* sqlite3.h */ = {isa = PBXFileReference; name = "sqlite3.h"; path = "cordova-sqlite-storage/sqlite3.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0296932077204703BBEDCB7D /* AppDelegate+FirebasePlugin.m */ = {isa = PBXFileReference; name = "AppDelegate+FirebasePlugin.m"; path = "cordova-plugin-firebase/AppDelegate+FirebasePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6B41D7C9DBBB40A6AC7777D9 /* FirebasePlugin.m */ = {isa = PBXFileReference; name = "FirebasePlugin.m"; path = "cordova-plugin-firebase/FirebasePlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		B378435EBEAC49F48B4F10F8 /* AppDelegate+FirebasePlugin.h */ = {isa = PBXFileReference; name = "AppDelegate+FirebasePlugin.h"; path = "cordova-plugin-firebase/AppDelegate+FirebasePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		1EA8FB7B6A3B478BAD7E938A /* FirebasePlugin.h */ = {isa = PBXFileReference; name = "FirebasePlugin.h"; path = "cordova-plugin-firebase/FirebasePlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DA80476BACE84A578B565507 /* Firebase.h */ = {isa = PBXFileReference; name = "Firebase.h"; path = "cordova-plugin-firebase/Firebase.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		04DE358DA8814FD382930F5D /* GoogleService-Info.plist */ = {isa = PBXFileReference; name = "GoogleService-Info.plist"; path = "GoogleService-Info.plist"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.plist.xml; explicitFileType = undefined; includeInIndex = 0; };
+		E425176FDDA94EEFA0A3CCEA /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; name = "FirebaseAnalytics.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/FirebaseAnalytics.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		5A8744E8602D441991FE9C68 /* FirebaseCore.framework */ = {isa = PBXFileReference; name = "FirebaseCore.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/FirebaseCore.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8F5E355489E34B7FA7FB6C37 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; name = "FirebaseInstanceID.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/FirebaseInstanceID.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		AF91C882DE834169A2063579 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; name = "GoogleInterchangeUtilities.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/GoogleInterchangeUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		DC660E9C46E4496091E2C67F /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; name = "GoogleSymbolUtilities.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/GoogleSymbolUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		70E8B4E0DBA347DF90D08D68 /* GoogleUtilities.framework */ = {isa = PBXFileReference; name = "GoogleUtilities.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/GoogleUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		0FE80E027F5449D7ACD60BD4 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; name = "FirebaseMessaging.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/FirebaseMessaging.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8531B99D1DA44D46BC4EC305 /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; name = "GoogleIPhoneUtilities.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/GoogleIPhoneUtilities.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		8013811F10BC487094E29D13 /* FirebaseCrash.framework */ = {isa = PBXFileReference; name = "FirebaseCrash.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/FirebaseCrash.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		3EA98A657F1E4A649491EBF0 /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; name = "FirebaseRemoteConfig.framework"; path = "HelloCordova/Plugins/cordova-plugin-firebase/FirebaseRemoteConfig.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		2F654D35A4154AD1A6A29E4F /* UniversalAnalyticsPlugin.m */ = {isa = PBXFileReference; name = "UniversalAnalyticsPlugin.m"; path = "cordova-plugin-google-analytics/UniversalAnalyticsPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D17507A98CD4432E832B146B /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; name = "libGoogleAnalyticsServices.a"; path = "HelloCordova/Plugins/cordova-plugin-google-analytics/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		18694699C3F340B98BBC4164 /* libAdIdAccess.a */ = {isa = PBXFileReference; name = "libAdIdAccess.a"; path = "HelloCordova/Plugins/cordova-plugin-google-analytics/libAdIdAccess.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		C5EDFDA01F6547529B4CCE93 /* UniversalAnalyticsPlugin.h */ = {isa = PBXFileReference; name = "UniversalAnalyticsPlugin.h"; path = "cordova-plugin-google-analytics/UniversalAnalyticsPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		CFD6BEBA5B564933AD2F3FF9 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; name = "GAIDictionaryBuilder.h"; path = "cordova-plugin-google-analytics/GAIDictionaryBuilder.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		3CDB46B7631E4228B13E1371 /* GAIFields.h */ = {isa = PBXFileReference; name = "GAIFields.h"; path = "cordova-plugin-google-analytics/GAIFields.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FF798A2450D844F8BB82C1E7 /* GAILogger.h */ = {isa = PBXFileReference; name = "GAILogger.h"; path = "cordova-plugin-google-analytics/GAILogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		B38303FA630A4121B8F48C7C /* GAITrackedViewController.h */ = {isa = PBXFileReference; name = "GAITrackedViewController.h"; path = "cordova-plugin-google-analytics/GAITrackedViewController.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A433B25E61DC4BD1B669698E /* GAI.h */ = {isa = PBXFileReference; name = "GAI.h"; path = "cordova-plugin-google-analytics/GAI.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		D946858807FE4DD9BBCEDFF2 /* GAITracker.h */ = {isa = PBXFileReference; name = "GAITracker.h"; path = "cordova-plugin-google-analytics/GAITracker.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		51FF75F8BA0B45BDA3FEADD0 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; name = "GAIEcommerceFields.h"; path = "cordova-plugin-google-analytics/GAIEcommerceFields.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		60E9A68571F940C0B4D24B77 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; name = "GAIEcommerceProduct.h"; path = "cordova-plugin-google-analytics/GAIEcommerceProduct.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		00D3667C07B945ACB4873DED /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; name = "GAIEcommerceProductAction.h"; path = "cordova-plugin-google-analytics/GAIEcommerceProductAction.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A9485892211E4DE395A7E8B3 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; name = "GAIEcommercePromotion.h"; path = "cordova-plugin-google-analytics/GAIEcommercePromotion.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A5AB1F53C35B475186D017C9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; name = "SystemConfiguration.framework"; path = "System/Library/Frameworks/SystemConfiguration.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		A92161D5783E47C4A154D394 /* CoreData.framework */ = {isa = PBXFileReference; name = "CoreData.framework"; path = "System/Library/Frameworks/CoreData.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		ED2CF6C8216A4A5596CB338C /* AdSupport.framework */ = {isa = PBXFileReference; name = "AdSupport.framework"; path = "System/Library/Frameworks/AdSupport.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		0EE04CBBF2864445922366AE /* libz.dylib */ = {isa = PBXFileReference; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
+		735E7A6C260644EB97C86C3C /* libsqlite3.dylib */ = {isa = PBXFileReference; name = "libsqlite3.dylib"; path = "usr/lib/libsqlite3.dylib"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = compiled.mach-o.dylib; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +142,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				12C63B6EE7F2409CB9A10F5D /* FirebaseAnalytics.framework in Frameworks */,
+				EB6396D283584179B143A448 /* FirebaseCore.framework in Frameworks */,
+				4BE2A51B65A948C6A062B7E0 /* FirebaseInstanceID.framework in Frameworks */,
+				5040BC507776482BB953A28E /* GoogleInterchangeUtilities.framework in Frameworks */,
+				E5058436E8CC440AA6A88CF8 /* GoogleSymbolUtilities.framework in Frameworks */,
+				9A8B87F9AD45412FA24155EE /* GoogleUtilities.framework in Frameworks */,
+				3AB056AFCF494B2CA12FD06D /* FirebaseMessaging.framework in Frameworks */,
+				2DB9EC6EAD474086B606C8E9 /* GoogleIPhoneUtilities.framework in Frameworks */,
+				D4E50831318D4DDAAC23A6DF /* FirebaseCrash.framework in Frameworks */,
+				724E11966267420894AF4827 /* FirebaseRemoteConfig.framework in Frameworks */,
+				9DAFA03F49424F3EB1958F47 /* libGoogleAnalyticsServices.a in Frameworks */,
+				0E37990AD05A40A398D70B80 /* libAdIdAccess.a in Frameworks */,
+				037008DB094E4D708DDB0F62 /* SystemConfiguration.framework in Frameworks */,
+				4818AE9257704EF4BA0FD8F2 /* CoreData.framework in Frameworks */,
+				6062FEACCC324DAABCCF8845 /* AdSupport.framework in Frameworks */,
+				E45D007D2D7646D88525BFB2 /* libz.dylib in Frameworks */,
+				90E7ABF2237140C8A0368824 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +220,7 @@
 				0207DA571B56EA530066E2B4 /* Images.xcassets */,
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* HelloCordova-Info.plist */,
+				04DE358DA8814FD382930F5D /* GoogleService-Info.plist */,
 			);
 			name = Resources;
 			path = "HelloCordova/Resources";
@@ -155,6 +229,23 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E425176FDDA94EEFA0A3CCEA /* FirebaseAnalytics.framework */,
+				5A8744E8602D441991FE9C68 /* FirebaseCore.framework */,
+				8F5E355489E34B7FA7FB6C37 /* FirebaseInstanceID.framework */,
+				AF91C882DE834169A2063579 /* GoogleInterchangeUtilities.framework */,
+				DC660E9C46E4496091E2C67F /* GoogleSymbolUtilities.framework */,
+				70E8B4E0DBA347DF90D08D68 /* GoogleUtilities.framework */,
+				0FE80E027F5449D7ACD60BD4 /* FirebaseMessaging.framework */,
+				8531B99D1DA44D46BC4EC305 /* GoogleIPhoneUtilities.framework */,
+				8013811F10BC487094E29D13 /* FirebaseCrash.framework */,
+				3EA98A657F1E4A649491EBF0 /* FirebaseRemoteConfig.framework */,
+				D17507A98CD4432E832B146B /* libGoogleAnalyticsServices.a */,
+				18694699C3F340B98BBC4164 /* libAdIdAccess.a */,
+				A5AB1F53C35B475186D017C9 /* SystemConfiguration.framework */,
+				A92161D5783E47C4A154D394 /* CoreData.framework */,
+				ED2CF6C8216A4A5596CB338C /* AdSupport.framework */,
+				0EE04CBBF2864445922366AE /* libz.dylib */,
+				735E7A6C260644EB97C86C3C /* libsqlite3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,6 +287,23 @@
 				199827FCA4384208B48FAE6C /* sqlite3.c */,
 				0F19E060CBF24B31B8418A66 /* SQLitePlugin.h */,
 				98E5870734FD4C0E95890F6D /* sqlite3.h */,
+				0296932077204703BBEDCB7D /* AppDelegate+FirebasePlugin.m */,
+				6B41D7C9DBBB40A6AC7777D9 /* FirebasePlugin.m */,
+				B378435EBEAC49F48B4F10F8 /* AppDelegate+FirebasePlugin.h */,
+				1EA8FB7B6A3B478BAD7E938A /* FirebasePlugin.h */,
+				DA80476BACE84A578B565507 /* Firebase.h */,
+				2F654D35A4154AD1A6A29E4F /* UniversalAnalyticsPlugin.m */,
+				C5EDFDA01F6547529B4CCE93 /* UniversalAnalyticsPlugin.h */,
+				CFD6BEBA5B564933AD2F3FF9 /* GAIDictionaryBuilder.h */,
+				3CDB46B7631E4228B13E1371 /* GAIFields.h */,
+				FF798A2450D844F8BB82C1E7 /* GAILogger.h */,
+				B38303FA630A4121B8F48C7C /* GAITrackedViewController.h */,
+				A433B25E61DC4BD1B669698E /* GAI.h */,
+				D946858807FE4DD9BBCEDFF2 /* GAITracker.h */,
+				51FF75F8BA0B45BDA3FEADD0 /* GAIEcommerceFields.h */,
+				60E9A68571F940C0B4D24B77 /* GAIEcommerceProduct.h */,
+				00D3667C07B945ACB4873DED /* GAIEcommerceProductAction.h */,
+				A9485892211E4DE395A7E8B3 /* GAIEcommercePromotion.h */,
 			);
 			name = Plugins;
 			path = "HelloCordova/Plugins";
@@ -279,6 +387,7 @@
 				3047A5141AB8059700498E2A /* build.xcconfig in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				3047A5121AB8059700498E2A /* build-debug.xcconfig in Resources */,
+				3FCB92A21A6A4EC88713F529 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +427,9 @@
 				4A441251BEC84805BCEFF543 /* IonicKeyboard.m in Sources */,
 				A4D04176C341474D800BAEFC /* SQLitePlugin.m in Sources */,
 				F437CBF86AE44049B646056C /* sqlite3.c in Resources */,
+				6FE34AC7A7A640E1BC1662D0 /* AppDelegate+FirebasePlugin.m in Sources */,
+				0CAE983FE53740E6ADD91397 /* FirebasePlugin.m in Sources */,
+				4AA3827594B04A90B28748A1 /* UniversalAnalyticsPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +463,24 @@
 				INFOPLIST_FILE = "HelloCordova/HelloCordova-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_NAME = "HelloCordova";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HelloCordova/Plugins/cordova-plugin-google-analytics\"",
+					"\"$(SRCROOT)/HelloCordova/Plugins/cordova-plugin-google-analytics\"",
+				);
 			};
 			name = Debug;
 		};
@@ -370,6 +500,24 @@
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "HelloCordova/HelloCordova-Info.plist";
 				PRODUCT_NAME = "HelloCordova";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HelloCordova/Plugins/cordova-plugin-google-analytics\"",
+					"\"$(SRCROOT)/HelloCordova/Plugins/cordova-plugin-google-analytics\"",
+				);
 			};
 			name = Release;
 		};
@@ -397,6 +545,24 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				PRODUCT_NAME = "HelloCordova";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HelloCordova/Plugins/cordova-plugin-google-analytics\"",
+					"\"$(SRCROOT)/HelloCordova/Plugins/cordova-plugin-google-analytics\"",
+				);
 			};
 			name = Debug;
 		};
@@ -423,6 +589,24 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				PRODUCT_NAME = "HelloCordova";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+					"\"HelloCordova/Plugins/cordova-plugin-firebase\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/HelloCordova/Plugins/cordova-plugin-google-analytics\"",
+					"\"$(SRCROOT)/HelloCordova/Plugins/cordova-plugin-google-analytics\"",
+				);
 			};
 			name = Release;
 		};

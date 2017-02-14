@@ -56,6 +56,23 @@ module.exports = [
         "clobbers": [
             "SQLitePlugin"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-firebase/www/firebase.js",
+        "id": "cordova-plugin-firebase.FirebasePlugin",
+        "pluginId": "cordova-plugin-firebase",
+        "clobbers": [
+            "FirebasePlugin"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-google-analytics/www/analytics.js",
+        "id": "cordova-plugin-google-analytics.UniversalAnalytics",
+        "pluginId": "cordova-plugin-google-analytics",
+        "clobbers": [
+            "analytics",
+            "ga"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -67,7 +84,9 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
     "ionic-plugin-keyboard": "2.2.1",
-    "cordova-sqlite-storage": "2.0.2"
+    "cordova-sqlite-storage": "2.0.2",
+    "cordova-plugin-firebase": "0.1.19",
+    "cordova-plugin-google-analytics": "1.7.4"
 }
 // BOTTOM OF METADATA
 });

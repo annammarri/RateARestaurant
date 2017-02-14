@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "765183659569",
+    "firebase_url": "https://raterestaurants.firebaseio.com",
+    "project_id": "raterestaurants",
+    "storage_bucket": "raterestaurants.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765183659569:android:0eea934572714f5c",
+        "android_client_info": {
+          "package_name": "com.training.ratearestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765183659569-c7dm5k2mhfs8nnvuienkd93o73tml9ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIRZsrgXtxEx_74tVwv4w0lYW_R2TKfmM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

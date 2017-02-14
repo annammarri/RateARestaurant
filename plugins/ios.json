@@ -27,6 +27,12 @@
         },
         "cordova-sqlite-storage": {
             "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-firebase": {
+            "PACKAGE_NAME": "com.ionicframework.ratearestaurant113064"
+        },
+        "cordova-plugin-google-analytics": {
+            "PACKAGE_NAME": "com.ionicframework.ratearestaurant113064"
         }
     },
     "dependent_plugins": {}
