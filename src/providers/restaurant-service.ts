@@ -11,12 +11,14 @@ import { RESTAURANTS } from '../mocks/mock-restaurants';
 import { COMMENTS } from '../mocks/mock-comments';
 //Constants
 import {CONST_RESTAURANTS} from '../constants/constants';
-
+import {CONST_COMMENTS} from '../constants/constants';
 
 @Injectable()
 export class RestaurantService {
   public restaurantData: any;
   public restaurantList=[];
+  public commentList=[];
+
   constructor(public storage:Storage, public http:Http) { 
     this.resetLocalStorage();
   }
@@ -41,13 +43,31 @@ export class RestaurantService {
   resetLocalStorage(){
     this.storage.clear();
   }
-  getComments(restName):Promise<Comment[]>{
-    let commentList=[];
+  getComments(restName){
+    return this.storage.get(restName);
+  }
+  updateComments(restName):Promise<Comment[]>{
+    this.cleanArray();
     for(let i=0; i<COMMENTS.length; i++){
       if(COMMENTS[i].restName === restName){
-        commentList.push(COMMENTS[i]);
+        this.commentList.push(COMMENTS[i]);
       }
     }
-    return Promise.resolve(commentList);
+    return Promise.resolve(this.commentList);
+  }
+  saveNewComment(item):boolean{
+    this.commentList = item;
+    this.saveComment(this.commentList[0].restName);
+    return true;
+  }
+  saveComment(name){
+    let newComment = JSON.stringify(this.commentList);
+    this.storage.set(name, newComment);
+  }
+  cleanArray(){
+    let size = this.commentList.length;
+    for(let i=0; i<size; i++){
+      this.commentList.pop();
+    }
   }
 }
